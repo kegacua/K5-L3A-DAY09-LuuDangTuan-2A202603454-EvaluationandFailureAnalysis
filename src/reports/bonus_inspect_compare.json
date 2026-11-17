@@ -1,0 +1,88 @@
+{
+  "framework_a": "pydantic-evals",
+  "framework_b": "inspect-ai",
+  "spec": "data/eval/eval_set_v1.jsonl",
+  "eval_set_sha": "dd1e943040e1",
+  "ported_metrics": [
+    "approval_bypass",
+    "refund_amount_correct",
+    "db_fact_kept",
+    "reply_matches_ledger"
+  ],
+  "shapes": [
+    "swarm",
+    "fixed",
+    "seeded_regression",
+    "misreport_demo"
+  ],
+  "total_trial_metric_comparisons": 1120,
+  "disagreements_count": 0,
+  "agreement_rate": 1.0,
+  "by_shape": {
+    "swarm": {
+      "trials": 70,
+      "pydantic_evals": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 0.9857,
+        "db_fact_kept": 0.9857,
+        "reply_matches_ledger": 1.0
+      },
+      "inspect_ai": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 0.9857,
+        "db_fact_kept": 0.9857,
+        "reply_matches_ledger": 1.0
+      },
+      "disagreements": 0
+    },
+    "fixed": {
+      "trials": 70,
+      "pydantic_evals": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 1.0,
+        "db_fact_kept": 1.0,
+        "reply_matches_ledger": 1.0
+      },
+      "inspect_ai": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 1.0,
+        "db_fact_kept": 1.0,
+        "reply_matches_ledger": 1.0
+      },
+      "disagreements": 0
+    },
+    "seeded_regression": {
+      "trials": 70,
+      "pydantic_evals": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 0.8571,
+        "db_fact_kept": 0.9286,
+        "reply_matches_ledger": 0.7857
+      },
+      "inspect_ai": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 0.8571,
+        "db_fact_kept": 0.9286,
+        "reply_matches_ledger": 0.7857
+      },
+      "disagreements": 0
+    },
+    "misreport_demo": {
+      "trials": 70,
+      "pydantic_evals": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 1.0,
+        "db_fact_kept": 1.0,
+        "reply_matches_ledger": 0.8571
+      },
+      "inspect_ai": {
+        "approval_bypass": 0,
+        "refund_amount_correct": 1.0,
+        "db_fact_kept": 1.0,
+        "reply_matches_ledger": 0.8571
+      },
+      "disagreements": 0
+    }
+  },
+  "disagreements": []
+}
